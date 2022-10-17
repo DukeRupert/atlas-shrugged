@@ -1,13 +1,14 @@
 export const LOGO = {
-	label: 'Workflow',
-	href: '#',
+	label: 'Full Circle Rail',
+	href: '/',
 	img: {
-		src: 'https://tailwindui.com/img/logos/workflow-mark.svg?color=primary&shade=600',
-		alt: 'Workflow'
+		src: '/images/fcr_logo_small.png	',
+		alt: 'Full Circle Rail logo'
 	}
 };
 
 export const CONTACT = {
+	name: 'Full Circle Rail',
 	phone: {
 		string: '123-456-7890',
 		href: 'tel:1234567890'

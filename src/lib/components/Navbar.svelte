@@ -4,11 +4,8 @@
 
 	const login = '/login';
 
-	const links = [
-		{ label: 'services', href: '/#services' },
-		{ label: 'Our team', href: '/#our-team' },
-		{ label: 'Company', href: '/#company' }
-	];
+	// Example : { label: 'contact-us', href: '/contact-us' }
+	const links = [];
 
 	function openMenu(): void {
 		$isMobileMenu = true;
@@ -30,16 +27,16 @@
 </svg>
 
 <div>
-	<div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+	<div class="relative h-auto pt-6 px-4 sm:px-6 lg:px-8">
 		<nav
-			class="relative flex items-center justify-between sm:h-10 lg:justify-start"
+			class="relative h-auto flex items-center justify-between sm:h-10 lg:justify-start"
 			aria-label="Global"
 		>
-			<div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+			<div class="flex items-center flex-grow flex-shrink-0">
 				<div class="flex items-center justify-between w-full md:w-auto">
 					<a href={LOGO.href}>
 						<span class="sr-only">{LOGO.label}</span>
-						<img alt={LOGO.img.alt} class="h-8 w-auto sm:h-10" src={LOGO.img.src} />
+						<img alt={LOGO.img.alt} class="w-14 h-auto max-w-none" src={LOGO.img.src} />
 					</a>
 					<div class="-mr-2 flex items-center md:hidden">
 						<button

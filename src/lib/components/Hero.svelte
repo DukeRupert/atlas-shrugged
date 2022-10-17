@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Circle from './three/Circle.svelte';
+
 	const Hero = {
 		title: {
 			text: 'Empowering rail with',
@@ -7,12 +9,12 @@
 		text: `Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
 				Elit sunt amet fugiat veniam occaecat fugiat aliqua.`,
 		primaryAction: {
-			label: 'get started',
-			href: '#contact-us'
+			label: 'Login',
+			href: '/login'
 		},
 		secondaryAction: {
-			label: 'learn more',
-			href: '#services'
+			label: 'Contact Us',
+			href: '/contact-us'
 		},
 		image: {
 			src: '/images/train.jpg',
@@ -22,8 +24,8 @@
 </script>
 
 <main class="lg:relative">
-	<div class="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
-		<div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
+	<div class="relative mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
+		<div class="relative px-4 lg:w-1/2 sm:px-8 xl:pr-16">
 			<h1
 				class="text-4xl tracking-tight font-bold text-gray-900 sm:text-5xl sm:tracking-tight md:text-6xl md:tracking-tight lg:text-5xl lg:tracking-tight xl:text-6xl xl:tracking-tight"
 			>
@@ -40,14 +42,14 @@
 						{Hero.primaryAction.label}
 					</a>
 				</div>
-				<div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+				<!-- <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
 					<a
 						href={Hero.secondaryAction.href}
 						class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md capitalize text-primary-600 bg-background hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
 					>
 						{Hero.secondaryAction.label}
 					</a>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
@@ -57,3 +59,8 @@
 		<img class="object-cover w-full h-auto" src={Hero.image.src} alt={Hero.image.alt} />
 	</div>
 </main>
+
+<style>
+	.rotate {
+	}
+</style>
